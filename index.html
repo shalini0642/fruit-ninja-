@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fruit Ninja Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Google Sign-In Buttons -->
+  <button id="login-btn" class="login-btn">Login with Google</button>
+  <button id="logout-btn" class="login-btn" style="display: none;">Logout</button>
+  <p id="user-name" style="color: white;"></p>
+
+  <!-- Score and Lives -->
+  <p id="score" class="hud">Score: 0</p>
+  <p id="lives" class="hud" style="top: 60px;">Lives: 3</p>
+
+  <!-- Canvas -->
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- Script files -->
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
